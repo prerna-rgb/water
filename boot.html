@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	
+      <style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height:650px;
+  }
+  *{
+  margin:0; 
+  padding:0;
+  font-family:'Josefin Sans', sans-serif;
+}
+
+  /* gallery*/
+  
+ .gallery{
+ background:#fff;
+ }
+  
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 385.7px;
+  background:#fff;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+ 
+}
+#myImg {
+  width: 1570px;
+  height: 600px;
+  object-fit: cover;
+  object-position: 0% 0%;
+  animation: mymove 5s infinite;
+  transition:0.6s ease;
+}  
+
+@keyframes mymove {
+  0% {
+    object-position: 0% 0%;
+  }
+  25% {
+    object-position: 20% 0%;
+  }
+  100% {
+    object-position: 100% 100%;
+  }
+}
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+body, html{
+  margin: 0;
+  background: #FFF;
+  font-family: 'Poppins', sans-serif;
+}
+h1{
+  text-align: center;
+  color:;
+}
+.container-all{
+  width: fit-content;
+  margin: 20px auto;
+  height: auto;
+}
+.container{
+  width: calc(33% - 6px);
+  overflow:hidden;
+  height: fit-content;
+  margin:3px;
+  padding: 0;
+  display:block;
+  position:relative;
+  float:left;
+}
+img{
+  width: 100%;
+  transition-duration: .3s;
+  max-width: 100%;
+  display:block;
+  overflow:hidden;
+  cursor:pointer;
+}
+.title{
+  position:absolute;
+  display:block;
+  cursor:pointer;
+  top: 35%;
+  display: none;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 1.6em;
+  text-shadow: 1px 5px 10px black;
+  transition-duration: .3s;
+}
+.text{
+  position:absolute;
+  top: 70%;
+  cursor:pointer;
+  max-width: 80%;
+  text-align:center;
+  left: 50%;
+  text-shadow: 1px 5px 10px black;
+  font-size: 1em;
+  display:none;
+  margin-right: -50%;
+  transition-duration: .3s;
+  transform: translate(-50%, -50%) 
+}
+.container:hover img{
+  transform: scale(1.2);
+  transition-duration: .3s;
+  filter: grayscale(50%);
+  opacity: .7;
+}
+.container:hover span{
+  color:white;
+  display: block;
+  transition-duration: .3s;
+}
+@media only screen and (max-width: 900px) {
+    .container {
+        width: calc(50% - 6px);
+    }
+}
+@media only screen and (max-width: 400px) {
+    .container {
+        width: 100%;
+    }
+}
+
+</style>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark \">
+  <a class="navbar-brand" href="#">WATER</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about us.html">about us</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">add</a>
+          <a class="dropdown-item" href="#">add2</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">add all</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">link</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn bg-dark text-white btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://cdn.britannica.com/12/100812-050-27483D5E/Mamallapuram-Shore-Temple-Chennai-India-Tamil-Nadu.jpg" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>world</h3>
+        <p>we are all one</p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="https://cdn.pixabay.com/photo/2018/05/01/11/46/water-3365389_1280.jpg" alt="Chicago" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>world</h3>
+        <p>we are all one</p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="https://img5.goodfon.com/wallpaper/nbig/a/ad/frantsiia-mon-sen-mishel-zamok-monastyr-ostrov.jpg" alt="New York" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>world</h3>
+        <p>we are all one</p>
+      </div>   
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+	</header>
+	
+	
+
+<!--about us-->
+	<section>
+		<div class="container-fluid">
+		<h1 class="text-center text-capitalize  pt-5">ABOUT US</h1>
+		<hr class="w-25 mx-auto  pt-5">
+
+		<div class="row mb-5">
+			<div class="col-lg-6 col-md-6 col-12">
+			<img src="https://scx2.b-cdn.net/gfx/news/hires/2020/sea.jpg" class="img-fluid">    </div>
+		 <div class="col-lg-6 col-md-6 col-12">
+		 	<h1> KNOW WHO WE ARE !</h1>
+		 	<hr>
+		 	<p>Water is an inorganic, transparent, tasteless, odorless, and nearly colorless chemical substance, which is the main constituent of Earth's hydrosphere and the fluids of all known living organisms. It is vital for all known forms of life, even though it provides no calories or organic nutrients. Its chemical formula is H2O, meaning that each of its molecules contains one oxygen and two hydrogen atoms, connected by covalent bonds.
+			In many areas, water is regulated and distributed by governments. In the United States, it's regulated by the Safe Drinking Water Act. However, government control isn't always in the best interests of all people. In the 1930s, to irrigate cotton fields, the Soviet government created canals to divert the rivers that fed the Aral Sea (located between Kazakhstan and Uzbekistan). As a result, the surface area of the sea has shrunk by more than 50 percent and its volume by 80 percent over the past 50 years [source: Swanson]. Its salinity increased and it became polluted with pesticides, fertilizer runoff and industrial waste. The loss of the sea meant the decline of the commercial fishing industry, which helped to send the region into poverty. The pollutants from the exposed seabed have been found in the blood of Antarctic penguins<a href="https://science.howstuffworks.com/environmental/earth/geophysics/h2o.htm#pt8"> [source: Swanson]</a>.
+			</p>
+		 	<a href="about us.html"><button class="btn bg-primary text-white">wanna know me</button></a>
+
+		 </div>
+	</div>
+	</section>
+<!--about us FINISHES-->
+
+
+
+<!--call-->
+
+    <section class="bg-primary text-white">
+      <article class="py-5 text-center">
+        <div>
+          <h3 class="display-4 ">+91 1234567890 </h3>
+            <p> Dont call </p>
+          <a href="tel:9810696178"><button class="btn btn-warning"> Please </button></a>
+        </div>
+      </article>
+    </section>
+
+<!--call FINISHES-->
+ 
+  
+ <!--gallery-->
+
+ <!--gallery ends-->
+
+<!---phoyo--->
+   <br><br>
+  <img src="https://scx2.b-cdn.net/gfx/news/hires/2020/sea.jpg" alt="water" id="myImg" width="400" height="300">
+
+
+<!---phoyo ends--->
+
+<section>
+		<div class="container-fluid">
+		<h1 class="text-center text-capitalize  pt-5">KNOW AND CHANGE</h1>
+		<hr class="w-25 mx-auto  pt-5">
+
+		<div class="row mb-5">
+			<div class="col-lg-6 col-md-6 col-12">
+			<img src="https://images.theconversation.com/files/227183/original/file-20180711-27018-19ewdiy.jpg?ixlib=rb-1.1.0&rect=46%2C861%2C5184%2C2592&q=45&auto=format&w=1356&h=668&fit=crop" class="img-fluid">    </div>
+		 <div class="col-lg-6 col-md-6 col-12">
+		 	<h1>ITS NOT LATE !</h1>
+		 	<hr>
+		 	<p>Water is an inorganic, transparent, tasteless, odorless, and nearly colorless chemical substance, which is the main constituent of Earth's hydrosphere and the fluids of all known living organisms. It is vital for all known forms of life, even though it provides no calories or organic nutrients. Its chemical formula is H2O, meaning that each of its molecules contains one oxygen and two hydrogen atoms, connected by covalent bonds.
+			In many areas, water is regulated and distributed by governments. In the United States, it's regulated by the Safe Drinking Water Act. <a href="https://science.howstuffworks.com/environmental/earth/geophysics/h2o.htm#pt8"> [source: Swanson]</a>.
+			</p>
+		 	<a href="about us.html"><button class="btn bg-primary text-white">wanna know me</button></a>
+
+		 </div>
+	</div>
+	</section>
+<!-----------------------new donate------------------->
+	    <section class="bg-primary text-white">
+      <article class="py-5 text-center">
+        <div>
+          <h3 class="display-4 "> LET'S GIVE </h3>
+            <p> A DOLLAR TO PROTECT A LIVING </p>
+          <a href="file:///C:/Users/Hope/Desktop/b/trying.html"><button class="btn btn-warning" > DONATE </button>
+		  </div>
+		
+      </article>
+    </section>
+
+<!-------------gallery----------->
+<BR>
+<div class="container">
+  <a href="plastic.html"><img src="https://www.howitworksdaily.com/wp-content/uploads/2019/07/Screen-Shot-2019-07-02-at-10.23.51.png" height="345"  alt="plastic"></a>
+   <span class="title" style="text-align:center;">By 2050, There Will Be More Plastic in the Ocean Than Fish,which is a t the greater risk.</span>
+  <span class="text">CLICK</span>
+</div>
+<div class="container">
+  <a href="human.hmtl"><img src="https://thumbs-prod.si-cdn.com/qn4AI9OgMpkIMPe_99j_zaUmgTc=/fit-in/1600x0/https://public-media.si-cdn.com/filer/fa/8d/fa8d22e3-9b93-426c-bb3e-a0b8c28d122f/12685861633_1708f2dbff_o1.jpg" alt="pollutants"></a>
+   <span class="title" style="text-align:center;"> 80% of the water pollution is caused due to domestic sewage.</span>
+  <span class="text">CLICK</span>
+</div>
+<div class="container">
+  <a href="human.html"><img src="https://miro.medium.com/max/400/1*Qi3RhFFZCbPxYoqy1APtJg.jpeg" alt="human"></a>
+   <span class="title" style="text-align:center;">5-10 billion tons od industrial waste is dumped into the ocean</span>
+  <span class="text">CLICK</span>
+</div>
+
+<!------------new---->
+<section>
+		<div class="container-fluid">
+		<h1 class="hwo">KNOW AND CHANGE</h1>
+		<hr class="w-25 mx-auto  pt-5">
+
+		<div class="row mb-5">
+			<div class="col-lg-6 col-md-6 col-12">
+			<img src="https://images.theconversation.com/files/227183/original/file-20180711-27018-19ewdiy.jpg?ixlib=rb-1.1.0&rect=46%2C861%2C5184%2C2592&q=45&auto=format&w=1356&h=668&fit=crop" class="img-fluid">    </div>
+		 <div class="col-lg-6 col-md-6 col-12">
+		 	<h1>never late to say sorry</h1>
+		 	<hr>
+		 	<p>Water is an inorganic, transparent, tasteless, odorless, and nearly colorless chemical substance, which is the main constituent of Earth's hydrosphere and the fluids of all known living organisms. It is vital for all known forms of life, even though it provides no calories or organic nutrients. Its chemical formula is H2O, meaning that each of its molecules contains one oxygen and two hydrogen atoms, connected by covalent bonds.
+			In many areas, water is regulated and distributed by governments. In the United States, it's regulated by the Safe Drinking Water Act. <a href="https://science.howstuffworks.com/environmental/earth/geophysics/h2o.htm#pt8"> [source: Swanson]</a>.
+			</p>
+		 	<button class="btn bg-primary text-white">wanna know me</button>
+
+		 </div>
+	</div>
+	</section>
+	<iframe width="1600" height="555" src="https://www.youtube.com/embed/BCHhwxvQqxg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	
+
+ 
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
